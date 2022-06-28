@@ -1,0 +1,24 @@
+{
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "metricGroup": "tech.ntp",
+ "name": "{{.name}}",
+ "properties": [
+  {
+   "defaultValue": "123",
+   "key": "ntp_port",
+   "type": "INTEGER"
+  },
+  {
+   "defaultValue": "",
+   "key": "ntp_server",
+   "type": "STRING"
+  }
+ ],
+ "type": "ONEAGENT",
+ "version": "2.016"
+}

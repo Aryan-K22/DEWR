@@ -1,0 +1,33 @@
+{
+ "aggregationType": "AVG",
+ "alertCondition": "BELOW",
+ "dealertingSamples": 5,
+ "description": "The RabbitMQ free disk space of {severity} is {alert_condition} the threshold of {threshold}",
+ "disabledReason": "NONE",
+ "enabled": true,
+ "eventType": "PERFORMANCE",
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   6
+  ]
+ },
+ "metricId": "builtin:tech.rabbitmq.disk_free_left_to_limit",
+ "monitoringStrategy": {
+  "alertCondition": "BELOW",
+  "alertingOnMissingData": false,
+  "dealertingSamples": 5,
+  "samples": 5,
+  "threshold": 50000000,
+  "type": "STATIC_THRESHOLD",
+  "unit": "BYTE",
+  "violatingSamples": 3
+ },
+ "name": "{{.name}}",
+ "samples": 5,
+ "severity": "PERFORMANCE",
+ "threshold": 50000000,
+ "unit": "BYTE",
+ "violatingSamples": 3,
+ "warningReason": "NONE"
+}

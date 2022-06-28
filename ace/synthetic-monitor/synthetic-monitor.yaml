@@ -1,0 +1,16 @@
+config:
+- Easytravel: Easytravel.json
+- EasyTravelClickpath: EasyTravelClickpath.json
+- dynatraceClickPathMonitor: dynatraceClickPathMonitor.json
+- dynatracecom: dynatracecom.json
+- dynatraceHTTPMonitor: dynatraceHTTPMonitor.json
+EasyTravelClickpath:
+- name: EasyTravel Clickpath
+Easytravel:
+- name: Easytravel
+dynatraceClickPathMonitor:
+- name: dynatrace Click Path Monitor
+dynatraceHTTPMonitor:
+- name: dynatrace HTTP Monitor
+dynatracecom:
+- name: dynatrace.com

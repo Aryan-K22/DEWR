@@ -1,0 +1,39 @@
+{
+ "description": null,
+ "entitySelectorBasedRules": [],
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [],
+  "currentConfigurationVersions": [
+   "1.0.5"
+  ]
+ },
+ "name": "{{.name}}",
+ "rules": [
+  {
+   "conditions": [
+    {
+     "comparisonInfo": {
+      "caseSensitive": null,
+      "negate": false,
+      "operator": "EXISTS",
+      "type": "STRING",
+      "value": null
+     },
+     "key": {
+      "attribute": "HOST_GROUP_NAME",
+      "type": "STATIC"
+     }
+    }
+   ],
+   "enabled": true,
+   "normalization": "LEAVE_TEXT_AS_IS",
+   "propagationTypes": [
+    "SERVICE_TO_HOST_LIKE",
+    "SERVICE_TO_PROCESS_GROUP_LIKE"
+   ],
+   "type": "SERVICE",
+   "valueFormat": "{HostGroup:Name}"
+  }
+ ]
+}

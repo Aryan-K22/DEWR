@@ -1,0 +1,33 @@
+{
+ "aggregationType": "MAX",
+ "alertCondition": "ABOVE",
+ "dealertingSamples": 5,
+ "description": "The {metricname} of {severity} is {alert_condition} the threshold of {threshold}",
+ "disabledReason": "NONE",
+ "enabled": true,
+ "eventType": "PERFORMANCE",
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   6
+  ]
+ },
+ "metricId": "builtin:tech.wso2-api-manager.metric_carbon_system_response_time_avg",
+ "monitoringStrategy": {
+  "alertCondition": "ABOVE",
+  "alertingOnMissingData": false,
+  "dealertingSamples": 5,
+  "samples": 10,
+  "threshold": 60000,
+  "type": "STATIC_THRESHOLD",
+  "unit": "MILLI_SECOND",
+  "violatingSamples": 5
+ },
+ "name": "{{.name}}",
+ "samples": 10,
+ "severity": "PERFORMANCE",
+ "threshold": 60000,
+ "unit": "MILLI_SECOND",
+ "violatingSamples": 5,
+ "warningReason": "NONE"
+}

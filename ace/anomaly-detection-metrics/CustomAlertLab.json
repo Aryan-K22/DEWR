@@ -1,0 +1,33 @@
+{
+ "aggregationType": "VALUE",
+ "alertCondition": "ABOVE",
+ "dealertingSamples": 3,
+ "description": "The {metricname} value of {severity} was {alert_condition} your custom threshold of {threshold}.",
+ "disabledReason": "NONE",
+ "enabled": true,
+ "eventType": "CUSTOM_ALERT",
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   6
+  ]
+ },
+ "metricId": "log.FinalChancePlease",
+ "monitoringStrategy": {
+  "alertCondition": "ABOVE",
+  "alertingOnMissingData": false,
+  "dealertingSamples": 3,
+  "samples": 3,
+  "threshold": 25,
+  "type": "STATIC_THRESHOLD",
+  "unit": "UNSPECIFIED",
+  "violatingSamples": 2
+ },
+ "name": "{{.name}}",
+ "samples": 3,
+ "severity": "CUSTOM_ALERT",
+ "threshold": 25,
+ "unit": "UNSPECIFIED",
+ "violatingSamples": 2,
+ "warningReason": "NONE"
+}

@@ -1,0 +1,35 @@
+{
+ "displayName": "{{.name}}",
+ "eventTypeFilters": [
+  {
+   "customEventFilter": {
+    "customTitleFilter": {
+     "caseInsensitive": false,
+     "enabled": true,
+     "negate": false,
+     "operator": "EQUALS",
+     "value": "ActiveGate Token(s) will expire soon"
+    }
+   }
+  }
+ ],
+ "managementZoneId": null,
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [],
+  "currentConfigurationVersions": [
+   "7.0.6"
+  ]
+ },
+ "mzId": null,
+ "rules": [
+  {
+   "delayInMinutes": 0,
+   "severityLevel": "CUSTOM_ALERT",
+   "tagFilter": {
+    "includeMode": "NONE",
+    "tagFilters": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,451 @@
+{
+ "enabled": true,
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "name": "{{.name}}",
+ "processGroups": [],
+ "queueEntryPoint": false,
+ "queueEntryPointType": null,
+ "rules": [
+  {
+   "annotations": [],
+   "className": "com.dynatrace.easytravel.frontend.beans.LoginBean",
+   "enabled": true,
+   "fileName": "",
+   "id": "5c6d76fd-ea3c-413a-a5dc-57305d7c440e",
+   "matcher": "EQUALS",
+   "methodRules": [
+    {
+     "argumentTypes": [
+      "com.dynatrace.easytravel.frontend.beans.LoginBean"
+     ],
+     "id": "958756b0-53b0-446a-89af-de74b822dc27",
+     "methodName": "access$000",
+     "modifiers": [
+      "STATIC"
+     ],
+     "returnType": "com.dynatrace.easytravel.frontend.login.UserContext",
+     "visibility": "PACKAGE_PROTECTED"
+    },
+    {
+     "argumentTypes": [],
+     "id": "78f45804-a7b7-48f6-8809-85246b033a86",
+     "methodName": "doLogin",
+     "modifiers": [],
+     "returnType": "void",
+     "visibility": "PACKAGE_PROTECTED"
+    },
+    {
+     "argumentTypes": [],
+     "id": "9de3df61-3d47-4ac8-a1e5-a4cd78c13a86",
+     "methodName": "getPassword",
+     "modifiers": [],
+     "returnType": "java.lang.String",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "2802c65d-2b4f-404f-951e-d46d827df2b2",
+     "methodName": "getRoleMap",
+     "modifiers": [],
+     "returnType": "java.util.Map",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "bdfff95c-5962-4bb9-9f11-1f5843411386",
+     "methodName": "getUserContext",
+     "modifiers": [],
+     "returnType": "com.dynatrace.easytravel.frontend.login.UserContext",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "59ed7945-d474-403d-82c5-1cf9f7c38fc7",
+     "methodName": "getUserName",
+     "modifiers": [],
+     "returnType": "java.lang.String",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "730790c0-17e0-4dae-abef-9a05bb65b2e6",
+     "methodName": "getUsers",
+     "modifiers": [],
+     "returnType": "com.dynatrace.easytravel.frontend.data.UserDO[]",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "ff8b2b9e-116e-48f0-aced-3ba8391409d0",
+     "methodName": "retrieveUsers",
+     "modifiers": [],
+     "returnType": "void",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [
+      "com.dynatrace.easytravel.frontend.beans.DataBean"
+     ],
+     "id": "1cef6991-e7fa-412d-ba3b-f8a21dfa088b",
+     "methodName": "setDataBean",
+     "modifiers": [],
+     "returnType": "void",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [
+      "java.lang.String"
+     ],
+     "id": "01c27482-1e76-4a48-80ed-c4b5e801e3a7",
+     "methodName": "setPassword",
+     "modifiers": [],
+     "returnType": "void",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [
+      "java.lang.String"
+     ],
+     "id": "f20d3f8b-415e-4220-92ce-4b100aaeda73",
+     "methodName": "setUserName",
+     "modifiers": [],
+     "returnType": "void",
+     "visibility": "PUBLIC"
+    }
+   ]
+  },
+  {
+   "annotations": [],
+   "className": "com.dynatrace.easytravel.frontend.beans.AdBean",
+   "enabled": true,
+   "fileName": "",
+   "id": "86e9d311-0cfb-45fc-a12c-288a8633d2e5",
+   "matcher": "EQUALS",
+   "methodRules": [
+    {
+     "argumentTypes": [],
+     "id": "c84a7c8e-527e-4abc-8736-b354a604e12f",
+     "methodName": "access$000",
+     "modifiers": [
+      "STATIC"
+     ],
+     "returnType": "java.lang.Object",
+     "visibility": "PACKAGE_PROTECTED"
+    },
+    {
+     "argumentTypes": [],
+     "id": "887d3b9b-d234-4d28-af66-fdcf6793e592",
+     "methodName": "access$100",
+     "modifiers": [
+      "STATIC"
+     ],
+     "returnType": "ch.qos.logback.classic.Logger",
+     "visibility": "PACKAGE_PROTECTED"
+    },
+    {
+     "argumentTypes": [],
+     "id": "ec552463-6c51-439e-a65e-0da3321d3e86",
+     "methodName": "access$200",
+     "modifiers": [
+      "STATIC"
+     ],
+     "returnType": "java.lang.Object",
+     "visibility": "PACKAGE_PROTECTED"
+    },
+    {
+     "argumentTypes": [],
+     "id": "1a4e421f-561b-4752-9e8a-6897bc853999",
+     "methodName": "clickImage",
+     "modifiers": [],
+     "returnType": "void",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "999f1a2d-4314-4929-babe-55f224dc0211",
+     "methodName": "getBannerUrl",
+     "modifiers": [],
+     "returnType": "java.lang.String",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "94774280-55e7-4606-9465-5a0b709fed24",
+     "methodName": "getBuildDate",
+     "modifiers": [],
+     "returnType": "java.lang.String",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "781a1300-a78a-420b-8eeb-b86174512e1a",
+     "methodName": "getCurrentPromotion",
+     "modifiers": [],
+     "returnType": "com.dynatrace.easytravel.frontend.beans.Promotion",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "ca089b49-876a-4952-9eb1-5aeccd39b9b0",
+     "methodName": "getPromotions",
+     "modifiers": [],
+     "returnType": "com.dynatrace.easytravel.frontend.beans.Promotion[]",
+     "visibility": "PRIVATE"
+    },
+    {
+     "argumentTypes": [],
+     "id": "c79d088f-4e5a-4873-9639-48af5006189b",
+     "methodName": "getVersion",
+     "modifiers": [],
+     "returnType": "com.dynatrace.easytravel.config.Version",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [
+      "com.dynatrace.easytravel.frontend.beans.Promotion"
+     ],
+     "id": "d02700ce-fa94-4f37-963d-6f0515658a9b",
+     "methodName": "loadJourney",
+     "modifiers": [],
+     "returnType": "com.dynatrace.easytravel.frontend.beans.Promotion",
+     "visibility": "PRIVATE"
+    },
+    {
+     "argumentTypes": [
+      "com.dynatrace.easytravel.frontend.beans.DataBean"
+     ],
+     "id": "44f08d4e-d162-4917-9af5-866cd614f808",
+     "methodName": "setDataBean",
+     "modifiers": [],
+     "returnType": "void",
+     "visibility": "PUBLIC"
+    }
+   ]
+  },
+  {
+   "annotations": [],
+   "className": "com.dynatrace.easytravel.frontend.beans.BookingBean",
+   "enabled": true,
+   "fileName": "",
+   "id": "fe416d84-7e28-4bae-baed-01efbdd54e93",
+   "matcher": "EQUALS",
+   "methodRules": [
+    {
+     "argumentTypes": [],
+     "id": "a1d73829-2a7b-4a99-a77b-25c25ff2be24",
+     "methodName": "getAccountMap",
+     "modifiers": [],
+     "returnType": "java.util.Map",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "5901a173-684b-4103-b6e4-e54dbb93e3d0",
+     "methodName": "getAveragePricePerPerson",
+     "modifiers": [],
+     "returnType": "double",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "1b1e66f2-3de0-404f-a0a9-a8436f8b69b0",
+     "methodName": "getBookingId",
+     "modifiers": [],
+     "returnType": "java.lang.String",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "a670fd49-b99e-4c66-aa65-8c5d1aa9853a",
+     "methodName": "getBookingMap",
+     "modifiers": [],
+     "returnType": "java.util.Map",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "aeda8995-536f-47cc-bb85-dd8debc8112a",
+     "methodName": "getBookingPricePerPerson",
+     "modifiers": [],
+     "returnType": "double",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "d0260a37-94c0-4db0-a5f0-ecc3d6070ba2",
+     "methodName": "getBookingState",
+     "modifiers": [],
+     "returnType": "com.dynatrace.easytravel.frontend.beans.BookingBean$BookingState",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "fd490f63-e912-461e-8deb-9807dea61fa7",
+     "methodName": "getFinishInclude",
+     "modifiers": [],
+     "returnType": "java.lang.String",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "c9a309a9-f25e-4abd-9831-2b20a56773ae",
+     "methodName": "getLoginInclude",
+     "modifiers": [],
+     "returnType": "java.lang.String",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "3f191dc0-39da-43ac-af5c-3ed51b5ba214",
+     "methodName": "getNumberAdults",
+     "modifiers": [],
+     "returnType": "int",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "c43c2e8d-a338-4737-97b2-89f11c6c101a",
+     "methodName": "getNumberChildren",
+     "modifiers": [],
+     "returnType": "int",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "1325e5af-1c26-4495-a254-9caf2faaf31b",
+     "methodName": "getNumberOfPerson",
+     "modifiers": [],
+     "returnType": "int",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "25bae4b3-1ec7-4423-8f5c-b0b128b61b39",
+     "methodName": "getPaymentInclude",
+     "modifiers": [],
+     "returnType": "java.lang.String",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "2a8dfbbb-aedc-4b89-9cfd-93ab5d2d558a",
+     "methodName": "getReviewInclude",
+     "modifiers": [],
+     "returnType": "java.lang.String",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "58a6d1ab-fd53-4fd8-a724-3d9f08ce9fc5",
+     "methodName": "getSelectedJourney",
+     "modifiers": [],
+     "returnType": "com.dynatrace.easytravel.frontend.data.JourneyDO",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "8de00de9-19ce-4421-8b4a-c8f07b264bf4",
+     "methodName": "getSelectedJourneyId",
+     "modifiers": [],
+     "returnType": "int",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "7ec65302-141f-4ff2-9e48-4899cbeed4f5",
+     "methodName": "getTravellersLabel",
+     "modifiers": [],
+     "returnType": "java.lang.String",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "f000fd1d-42ba-493d-b616-409b38c90ed5",
+     "methodName": "isHTMLUnitTest",
+     "modifiers": [],
+     "returnType": "boolean",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "048b0a83-7cf4-47bb-a9c3-2dc4f575f36b",
+     "methodName": "isStateValid",
+     "modifiers": [],
+     "returnType": "boolean",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "51dafd00-eb1e-4f6c-abdd-952fb690ec5d",
+     "methodName": "loadJourney",
+     "modifiers": [],
+     "returnType": "void",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [],
+     "id": "6a2683ee-5a52-4d1c-9f2d-e686adcb0d64",
+     "methodName": "performBooking",
+     "modifiers": [],
+     "returnType": "java.lang.String",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [
+      "com.dynatrace.easytravel.frontend.beans.BookingBean$BookingState"
+     ],
+     "id": "1464879d-c806-4762-b1bf-e1ac391eff0f",
+     "methodName": "setBookingState",
+     "modifiers": [],
+     "returnType": "void",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [
+      "java.lang.String"
+     ],
+     "id": "e6e194cd-a379-4c5b-9ad8-1a21540668e9",
+     "methodName": "setCreditCardNumber",
+     "modifiers": [],
+     "returnType": "void",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [
+      "com.dynatrace.easytravel.frontend.beans.DataBean"
+     ],
+     "id": "d32e7fb7-c056-44c6-8ef2-9650cc14b838",
+     "methodName": "setDataBean",
+     "modifiers": [],
+     "returnType": "void",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [
+      "com.dynatrace.easytravel.frontend.beans.LoginBean"
+     ],
+     "id": "a09d91e0-a1f6-4da2-beda-06850823d5a9",
+     "methodName": "setLoginBean",
+     "modifiers": [],
+     "returnType": "void",
+     "visibility": "PUBLIC"
+    },
+    {
+     "argumentTypes": [
+      "int"
+     ],
+     "id": "c80b469d-ebfd-47fd-8cde-83b9af1bbf67",
+     "methodName": "setSelectedJourneyId",
+     "modifiers": [],
+     "returnType": "void",
+     "visibility": "PUBLIC"
+    }
+   ]
+  }
+ ]
+}

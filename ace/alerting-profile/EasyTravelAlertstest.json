@@ -1,0 +1,45 @@
+{
+ "displayName": "{{.name}}",
+ "eventTypeFilters": [],
+ "managementZoneId": null,
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [],
+  "currentConfigurationVersions": [
+   "7.0.6"
+  ]
+ },
+ "mzId": null,
+ "rules": [
+  {
+   "delayInMinutes": 0,
+   "severityLevel": "AVAILABILITY",
+   "tagFilter": {
+    "includeMode": "INCLUDE_ALL",
+    "tagFilters": [
+     {
+      "context": "CONTEXTLESS",
+      "key": "easyTravelTest",
+      "value": null
+     }
+    ]
+   }
+  },
+  {
+   "delayInMinutes": 10,
+   "severityLevel": "AVAILABILITY",
+   "tagFilter": {
+    "includeMode": "NONE",
+    "tagFilters": []
+   }
+  },
+  {
+   "delayInMinutes": 0,
+   "severityLevel": "AVAILABILITY",
+   "tagFilter": {
+    "includeMode": "NONE",
+    "tagFilters": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "aggregationType": "AVG",
+ "alertCondition": "ABOVE",
+ "dealertingSamples": 5,
+ "description": "The {metricname} of {severity} is {alert_condition} the threshold of {threshold}",
+ "disabledReason": "NONE",
+ "enabled": true,
+ "eventType": "ERROR",
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   6
+  ]
+ },
+ "metricId": "builtin:tech.coredns.panic_count_total",
+ "monitoringStrategy": {
+  "alertCondition": "ABOVE",
+  "alertingOnMissingData": false,
+  "dealertingSamples": 5,
+  "samples": 5,
+  "threshold": 0,
+  "type": "STATIC_THRESHOLD",
+  "unit": "COUNT",
+  "violatingSamples": 1
+ },
+ "name": "{{.name}}",
+ "samples": 5,
+ "severity": "ERROR",
+ "threshold": 0,
+ "unit": "COUNT",
+ "violatingSamples": 1,
+ "warningReason": "NONE"
+}

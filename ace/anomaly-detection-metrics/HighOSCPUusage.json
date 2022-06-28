@@ -1,0 +1,33 @@
+{
+ "aggregationType": "AVG",
+ "alertCondition": "ABOVE",
+ "dealertingSamples": 5,
+ "description": "The OS CPU usage is {alert_condition} the threshold of {threshold}",
+ "disabledReason": "NONE",
+ "enabled": true,
+ "eventType": "PERFORMANCE",
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   6
+  ]
+ },
+ "metricId": "builtin:tech.elasticsearch.remote.node.os.cpu_percent",
+ "monitoringStrategy": {
+  "alertCondition": "ABOVE",
+  "alertingOnMissingData": false,
+  "dealertingSamples": 5,
+  "samples": 5,
+  "threshold": 70,
+  "type": "STATIC_THRESHOLD",
+  "unit": "PERCENT",
+  "violatingSamples": 3
+ },
+ "name": "{{.name}}",
+ "samples": 5,
+ "severity": "PERFORMANCE",
+ "threshold": 70,
+ "unit": "PERCENT",
+ "violatingSamples": 3,
+ "warningReason": "NONE"
+}

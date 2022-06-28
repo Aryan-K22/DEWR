@@ -1,0 +1,39 @@
+{
+ "displayName": "{{.name}}",
+ "enabled": true,
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "nameFormat": "{Host:IpAddress}{Host:DetectedName}",
+ "rules": [
+  {
+   "comparisonInfo": {
+    "negate": false,
+    "operator": "EQUALS",
+    "type": "ENTITY_ID",
+    "value": "HOST_GROUP-64494876319C4E69"
+   },
+   "key": {
+    "attribute": "HOST_GROUP_ID",
+    "type": "STATIC"
+   }
+  },
+  {
+   "comparisonInfo": {
+    "caseSensitive": null,
+    "negate": false,
+    "operator": "EXISTS",
+    "type": "IP_ADDRESS",
+    "value": null
+   },
+   "key": {
+    "attribute": "HOST_IP_ADDRESS",
+    "type": "STATIC"
+   }
+  }
+ ],
+ "type": "HOST"
+}

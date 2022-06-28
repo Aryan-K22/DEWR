@@ -1,0 +1,69 @@
+{
+ "anomalyDetection": {
+  "loadingTimeThresholds": {
+   "enabled": true,
+   "thresholds": []
+  },
+  "outageHandling": {
+   "globalOutage": true,
+   "globalOutagePolicy": {
+    "consecutiveRuns": 1
+   },
+   "localOutage": false,
+   "localOutagePolicy": {
+    "affectedLocations": null,
+    "consecutiveRuns": null
+   },
+   "retryOnError": true
+  }
+ },
+ "automaticallyAssignedApps": [
+  "APPLICATION-EA7C4B59F27D43EB"
+ ],
+ "createdFrom": "GUI",
+ "enabled": false,
+ "entityId": "SYNTHETIC_TEST-38136B64AEF023A1",
+ "events": [
+  {
+   "entityId": "SYNTHETIC_TEST_STEP-0139AFFCEFF6ECED",
+   "name": "Loading of \"http://192.168.1.34:8080/\"",
+   "sequenceNumber": 1
+  }
+ ],
+ "frequencyMin": 5,
+ "keyPerformanceMetrics": {
+  "loadActionKpm": "VISUALLY_COMPLETE",
+  "xhrActionKpm": "VISUALLY_COMPLETE"
+ },
+ "locations": [
+  "SYNTHETIC_LOCATION-0F07F2944206F27B"
+ ],
+ "managementZones": [],
+ "manuallyAssignedApps": [],
+ "name": "{{.name}}",
+ "script": {
+  "configuration": {
+   "chromiumStartupFlags": {
+    "disable-web-security": false
+   },
+   "device": {
+    "deviceName": "Desktop",
+    "orientation": "landscape"
+   }
+  },
+  "events": [
+   {
+    "description": "Loading of \"http://192.168.1.34:8080/\"",
+    "type": "navigate",
+    "url": "http://192.168.1.34:8080/",
+    "wait": {
+     "waitFor": "page_complete"
+    }
+   }
+  ],
+  "type": "availability",
+  "version": "1.0"
+ },
+ "tags": [],
+ "type": "BROWSER"
+}

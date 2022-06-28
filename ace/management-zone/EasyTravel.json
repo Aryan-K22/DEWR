@@ -1,0 +1,41 @@
+{
+ "description": null,
+ "dimensionalRules": [],
+ "entitySelectorBasedRules": [],
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [],
+  "currentConfigurationVersions": [
+   "1"
+  ]
+ },
+ "name": "{{.name}}",
+ "rules": [
+  {
+   "conditions": [
+    {
+     "comparisonInfo": {
+      "negate": false,
+      "operator": "EQUALS",
+      "type": "TAG",
+      "value": {
+       "context": "CONTEXTLESS",
+       "key": "Host_Group_Tag",
+       "value": "easyTravel123"
+      }
+     },
+     "key": {
+      "attribute": "SERVICE_TAGS",
+      "type": "STATIC"
+     }
+    }
+   ],
+   "enabled": true,
+   "propagationTypes": [
+    "SERVICE_TO_HOST_LIKE",
+    "SERVICE_TO_PROCESS_GROUP_LIKE"
+   ],
+   "type": "SERVICE"
+  }
+ ]
+}

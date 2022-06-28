@@ -1,0 +1,13 @@
+{
+ "active": true,
+ "alertingProfile": "c21f969b-5f03-333d-83e0-4f8f136e7682",
+ "instanceName": "dev49988",
+ "message": "{State} {ProblemImpact} Problem {ProblemID}: {ProblemTitle}",
+ "name": "{{.name}}",
+ "password": null,
+ "sendEvents": true,
+ "sendIncidents": true,
+ "type": "SERVICE_NOW",
+ "url": null,
+ "username": "admin"
+}

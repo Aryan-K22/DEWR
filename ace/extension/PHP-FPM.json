@@ -1,0 +1,19 @@
+{
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "metricGroup": "tech.php.fpm",
+ "name": "{{.name}}",
+ "properties": [
+  {
+   "defaultValue": "http://127.0.0.1/status",
+   "key": "status_uri",
+   "type": "STRING"
+  }
+ ],
+ "type": "ONEAGENT",
+ "version": "2.35"
+}

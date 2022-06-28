@@ -1,0 +1,10 @@
+config:
+- KonaKart: KonaKart.json
+- wwweasytravelcom: wwweasytravelcom.json
+- easyTravel: easyTravel.json
+KonaKart:
+- name: KonaKart
+easyTravel:
+- name: easyTravel
+wwweasytravelcom:
+- name: www.easytravel.com

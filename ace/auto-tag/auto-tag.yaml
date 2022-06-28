@@ -1,0 +1,4 @@
+config:
+- HostGroupTag: HostGroupTag.json
+HostGroupTag:
+- name: Host_Group_Tag

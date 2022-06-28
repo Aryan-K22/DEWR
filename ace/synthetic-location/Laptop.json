@@ -1,0 +1,19 @@
+{
+ "autoUpdateChromium": true,
+ "availabilityLocationOutage": false,
+ "availabilityNodeOutage": false,
+ "availabilityNotificationsEnabled": true,
+ "city": "Sydney",
+ "countryCode": "AU",
+ "entityId": "SYNTHETIC_LOCATION-0F07F2944206F27B",
+ "latitude": -33.943,
+ "locationNodeOutageDelayInMinutes": 3,
+ "longitude": 151.181,
+ "name": "{{.name}}",
+ "nodes": [
+  "1544420823"
+ ],
+ "regionCode": "02",
+ "status": "ENABLED",
+ "type": "PRIVATE"
+}

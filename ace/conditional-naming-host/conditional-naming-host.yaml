@@ -1,0 +1,4 @@
+config:
+- EasyTravelHostRule: EasyTravelHostRule.json
+EasyTravelHostRule:
+- name: EasyTravel Host Rule

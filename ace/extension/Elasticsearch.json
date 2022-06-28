@@ -1,0 +1,29 @@
+{
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "metricGroup": "tech.elasticsearch.local",
+ "name": "{{.name}}",
+ "properties": [
+  {
+   "defaultValue": "",
+   "key": "auth_user",
+   "type": "STRING"
+  },
+  {
+   "defaultValue": "",
+   "key": "auth_password",
+   "type": "PASSWORD"
+  },
+  {
+   "defaultValue": "",
+   "key": "url",
+   "type": "STRING"
+  }
+ ],
+ "type": "ONEAGENT",
+ "version": "3.200"
+}

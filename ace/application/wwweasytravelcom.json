@@ -1,0 +1,238 @@
+{
+ "conversionGoals": [],
+ "costControlUserSessionPercentage": 100,
+ "customActionApdexSettings": {
+  "frustratingFallbackThreshold": 12000,
+  "frustratingThreshold": 12000,
+  "toleratedFallbackThreshold": 3000,
+  "toleratedThreshold": 3000
+ },
+ "identifier": "APPLICATION-08EBD5603755FA87",
+ "loadActionApdexSettings": {
+  "frustratingFallbackThreshold": 12000,
+  "frustratingThreshold": 12000,
+  "toleratedFallbackThreshold": 3000,
+  "toleratedThreshold": 3000
+ },
+ "loadActionKeyPerformanceMetric": "VISUALLY_COMPLETE",
+ "metaDataCaptureSettings": [],
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   31
+  ]
+ },
+ "monitoringSettings": {
+  "addCrossOriginAnonymousAttribute": true,
+  "advancedJavaScriptTagSettings": {
+   "additionalEventHandlers": {
+    "blurEventHandler": false,
+    "changeEventHandler": false,
+    "clickEventHandler": false,
+    "maxDomNodesToInstrument": 5000,
+    "mouseupEventHandler": false,
+    "toStringMethod": false,
+    "userMouseupEventForClicks": false
+   },
+   "eventWrapperSettings": {
+    "blur": false,
+    "change": false,
+    "click": false,
+    "mouseUp": false,
+    "touchEnd": false,
+    "touchStart": false
+   },
+   "globalEventCaptureSettings": {
+    "additionalEventCapturedAsUserInput": "",
+    "click": true,
+    "doubleClick": true,
+    "keyDown": true,
+    "keyUp": true,
+    "mouseDown": true,
+    "mouseUp": true,
+    "scroll": true
+   },
+   "instrumentUnsupportedAjaxFrameworks": false,
+   "maxActionNameLength": 100,
+   "maxErrorsToCapture": 10,
+   "proxyWrapperEnabled": false,
+   "specialCharactersToEscape": "",
+   "syncBeaconFirefox": false,
+   "syncBeaconInternetExplorer": false,
+   "userActionNameAttribute": null
+  },
+  "browserRestrictionSettings": {
+   "browserRestrictions": [],
+   "mode": "EXCLUDE"
+  },
+  "cacheControlHeaderOptimizations": true,
+  "contentCapture": {
+   "javaScriptErrors": true,
+   "resourceTimingSettings": {
+    "nonW3cResourceTimings": false,
+    "nonW3cResourceTimingsInstrumentationDelay": 50,
+    "resourceTimingCaptureType": null,
+    "resourceTimingsDomainLimit": null,
+    "w3cResourceTimings": true
+   },
+   "timeoutSettings": {
+    "temporaryActionLimit": 0,
+    "temporaryActionTotalTimeout": 100,
+    "timedActionSupport": false
+   },
+   "visuallyComplete2Settings": null,
+   "visuallyCompleteAndSpeedIndex": true
+  },
+  "cookiePlacementDomain": "",
+  "correlationHeaderInclusionRegex": "",
+  "customConfigurationProperties": "",
+  "excludeXhrRegex": "",
+  "fetchRequests": false,
+  "injectionMode": "JAVASCRIPT_TAG",
+  "ipAddressRestrictionSettings": {
+   "ipAddressRestrictions": [],
+   "mode": "EXCLUDE"
+  },
+  "javaScriptFrameworkSupport": {
+   "activeXObject": false,
+   "angular": false,
+   "dojo": false,
+   "extJS": false,
+   "icefaces": false,
+   "jQuery": false,
+   "mooTools": false,
+   "prototype": false
+  },
+  "libraryFileLocation": "",
+  "monitoringDataPath": "",
+  "scriptTagCacheDurationInHours": 1,
+  "secureCookieAttribute": false,
+  "serverRequestPathId": "",
+  "xmlHttpRequest": false
+ },
+ "name": "{{.name}}",
+ "realUserMonitoringEnabled": true,
+ "sessionReplayConfig": {
+  "costControlPercentage": 100,
+  "cssResourceCapturingExclusionRules": [],
+  "enableCssResourceCapturing": true,
+  "enabled": false
+ },
+ "type": "AUTO_INJECTED",
+ "userActionNamingSettings": {
+  "customActionNamingRules": [],
+  "ignoreCase": true,
+  "loadActionNamingRules": [
+   {
+    "conditions": [
+     {
+      "operand1": "{pageUrl (default)}",
+      "operand2": "orange-booking-review",
+      "operator": "CONTAINS"
+     },
+     {
+      "operand1": "{pageUrl (default)}",
+      "operand2": "orange-booking-payment",
+      "operator": "CONTAINS"
+     },
+     {
+      "operand1": "{pageUrl (default)}",
+      "operand2": "orange-booking-finish",
+      "operator": "CONTAINS"
+     }
+    ],
+    "template": "Booking",
+    "useOrConditions": false
+   },
+   {
+    "conditions": [
+     {
+      "operand1": "{pageUrl (default)}",
+      "operand2": "orange-booking-review",
+      "operator": "CONTAINS"
+     },
+     {
+      "operand1": "{pageUrl (default)}",
+      "operand2": "orange-booking-payment",
+      "operator": "CONTAINS"
+     },
+     {
+      "operand1": "{pageUrl (default)}",
+      "operand2": "orange-booking-finish",
+      "operator": "CONTAINS"
+     }
+    ],
+    "template": "Booking - {booking-short}",
+    "useOrConditions": true
+   }
+  ],
+  "placeholders": [
+   {
+    "input": "PAGE_URL",
+    "metadataId": null,
+    "name": "www.easytravel.com",
+    "processingPart": "ALL",
+    "processingSteps": [
+     {
+      "fallbackToInput": false,
+      "patternAfter": null,
+      "patternAfterSearchType": "LAST",
+      "patternBefore": null,
+      "patternBeforeSearchType": "FIRST",
+      "patternToReplace": "http://localhost:8079",
+      "regularExpression": null,
+      "replacement": "www.easytravel.com",
+      "type": "REPLACE_WITH_PATTERN"
+     }
+    ],
+    "useGuessedElementIdentifier": false
+   },
+   {
+    "input": "PAGE_URL",
+    "metadataId": null,
+    "name": "booking-short",
+    "processingPart": "ALL",
+    "processingSteps": [
+     {
+      "fallbackToInput": false,
+      "patternAfter": ".js",
+      "patternAfterSearchType": "LAST",
+      "patternBefore": "booking-",
+      "patternBeforeSearchType": "FIRST",
+      "patternToReplace": null,
+      "regularExpression": null,
+      "replacement": null,
+      "type": "SUBSTRING"
+     }
+    ],
+    "useGuessedElementIdentifier": false
+   }
+  ],
+  "queryParameterCleanups": [
+   "cfid",
+   "phpsessid",
+   "__sid",
+   "cftoken",
+   "sid"
+  ],
+  "splitUserActionsByDomain": true,
+  "useFirstDetectedLoadAction": false,
+  "xhrActionNamingRules": []
+ },
+ "waterfallSettings": {
+  "resourceBrowserCachingThreshold": 50,
+  "resourcesThreshold": 100000,
+  "slowCdnResourcesThreshold": 200000,
+  "slowFirstPartyResourcesThreshold": 200000,
+  "slowThirdPartyResourcesThreshold": 200000,
+  "speedIndexVisuallyCompleteRatioThreshold": 50,
+  "uncompressedResourcesThreshold": 860
+ },
+ "xhrActionApdexSettings": {
+  "frustratingFallbackThreshold": 12000,
+  "frustratingThreshold": 12000,
+  "toleratedFallbackThreshold": 3000,
+  "toleratedThreshold": 3000
+ },
+ "xhrActionKeyPerformanceMetric": "VISUALLY_COMPLETE"
+}

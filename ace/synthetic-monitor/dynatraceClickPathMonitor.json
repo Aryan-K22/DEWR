@@ -1,0 +1,122 @@
+{
+ "anomalyDetection": {
+  "loadingTimeThresholds": {
+   "enabled": true,
+   "thresholds": []
+  },
+  "outageHandling": {
+   "globalOutage": true,
+   "globalOutagePolicy": {
+    "consecutiveRuns": 1
+   },
+   "localOutage": false,
+   "localOutagePolicy": {
+    "affectedLocations": null,
+    "consecutiveRuns": null
+   },
+   "retryOnError": true
+  }
+ },
+ "automaticallyAssignedApps": [],
+ "createdFrom": "GUI",
+ "enabled": false,
+ "entityId": "SYNTHETIC_TEST-4AE8AD3C34F76B5D",
+ "events": [
+  {
+   "entityId": "SYNTHETIC_TEST_STEP-2B894F2EB80CAE8E",
+   "name": "Loading of \"http://dynatrace.com\"",
+   "sequenceNumber": 1
+  },
+  {
+   "entityId": "SYNTHETIC_TEST_STEP-1259F3583AD2CF61",
+   "name": "click",
+   "sequenceNumber": 2
+  },
+  {
+   "entityId": "SYNTHETIC_TEST_STEP-FCB5B6961850774B",
+   "name": "click",
+   "sequenceNumber": 3
+  }
+ ],
+ "frequencyMin": 5,
+ "keyPerformanceMetrics": {
+  "loadActionKpm": "VISUALLY_COMPLETE",
+  "xhrActionKpm": "VISUALLY_COMPLETE"
+ },
+ "locations": [
+  "GEOLOCATION-388A5AD15726CB6F",
+  "GEOLOCATION-0A41430434C388A9"
+ ],
+ "managementZones": [],
+ "manuallyAssignedApps": [],
+ "name": "{{.name}}",
+ "script": {
+  "configuration": {
+   "chromiumStartupFlags": {
+    "disable-web-security": false
+   },
+   "device": {
+    "deviceName": "Desktop",
+    "orientation": "landscape"
+   }
+  },
+  "events": [
+   {
+    "description": "Loading of \"http://dynatrace.com\"",
+    "type": "navigate",
+    "url": "http://dynatrace.com",
+    "wait": {
+     "waitFor": "page_complete"
+    }
+   },
+   {
+    "button": 0,
+    "description": "click",
+    "target": {
+     "locators": [
+      {
+       "type": "css",
+       "value": "#top-anchor dt-common-navigation:nth-child(4)"
+      },
+      {
+       "type": "css",
+       "value": "#top-anchor dt-common-navigation"
+      }
+     ]
+    },
+    "type": "click",
+    "wait": {
+     "waitFor": "page_complete"
+    }
+   },
+   {
+    "button": 0,
+    "description": "click",
+    "target": {
+     "locators": [
+      {
+       "type": "css",
+       "value": "div:contains(\"With automatic instrumentation for dynamic microservices and unique hybrid support, Dynatrace monitors your entire cloud including all dependencies in real time with no blind-spots. Dynatrace OneAgent supports byte-code instrumentation for Amazon EC2, Amazon Elastic Container Service, AWS Lambda, AWS Fargate, Amazon Elastic Kubernetes Service.\"):eq(3)"
+      },
+      {
+       "type": "css",
+       "value": "#layout-inner dt-common-navigation:nth-child(2)"
+      },
+      {
+       "type": "css",
+       "value": "#layout-inner dt-common-navigation"
+      }
+     ]
+    },
+    "type": "click",
+    "wait": {
+     "waitFor": "page_complete"
+    }
+   }
+  ],
+  "type": "clickpath",
+  "version": "1.0"
+ },
+ "tags": [],
+ "type": "BROWSER"
+}

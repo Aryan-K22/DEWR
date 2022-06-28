@@ -1,0 +1,45 @@
+{
+ "aggregationType": "VALUE",
+ "alertCondition": "ABOVE",
+ "dealertingSamples": 5,
+ "description": "Node {severity} for {violating_samples}.",
+ "disabledReason": "NONE",
+ "enabled": true,
+ "eventType": "AVAILABILITY",
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   6
+  ]
+ },
+ "metricDimensions": [
+  {
+   "filterType": "STRING",
+   "index": 1,
+   "key": null,
+   "name": "Bucket",
+   "textFilter": {
+    "operator": "EQUALS",
+    "value": "failed"
+   }
+  }
+ ],
+ "metricId": "builtin:tech.rabbitmq.node_status",
+ "monitoringStrategy": {
+  "alertCondition": "ABOVE",
+  "alertingOnMissingData": false,
+  "dealertingSamples": 5,
+  "samples": 5,
+  "threshold": 0,
+  "type": "STATIC_THRESHOLD",
+  "unit": "COUNT",
+  "violatingSamples": 3
+ },
+ "name": "{{.name}}",
+ "samples": 5,
+ "severity": "AVAILABILITY",
+ "threshold": 0,
+ "unit": "COUNT",
+ "violatingSamples": 3,
+ "warningReason": "NONE"
+}

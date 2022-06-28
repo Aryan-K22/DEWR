@@ -1,0 +1,19 @@
+{
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "metricGroup": "tech.Custom_Technology",
+ "name": "{{.name}}",
+ "properties": [
+  {
+   "defaultValue": "",
+   "key": "url",
+   "type": "STRING"
+  }
+ ],
+ "type": "ACTIVEGATE",
+ "version": "1.3"
+}

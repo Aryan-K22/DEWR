@@ -1,0 +1,88 @@
+config:
+- Highpaniccount: Highpaniccount.json
+- RedisReplicaunsynchronized: RedisReplicaunsynchronized.json
+- HighRabbitMQfiledescriptorsusage: HighRabbitMQfiledescriptorsusage.json
+- RabbitMQNodefailed: RabbitMQNodefailed.json
+- HighOSCPUusage: HighOSCPUusage.json
+- WSO2APIManager-Highhttpslatency: WSO2APIManager-Highhttpslatency.json
+- WSO2APIManager-Highhttpbackendlatency: WSO2APIManager-Highhttpbackendlatency.json
+- HighRabbitMQnumberofblockedconnections: HighRabbitMQnumberofblockedconnections.json
+- HighRabbitMQprocessesusage: HighRabbitMQprocessesusage.json
+- WSO2APIManager-Carbonhasfaultyservices: WSO2APIManager-Carbonhasfaultyservices.json
+- HighRabbitMQnumberofautodeletequeueswithoutconsumers: HighRabbitMQnumberofautodeletequeueswithoutconsumers.json
+- LowHAProxyidletime: LowHAProxyidletime.json
+- RedisReplicasynchronizationinprogress: RedisReplicasynchronizationinprogress.json
+- HighHAProxybackendsessionusage: HighHAProxybackendsessionusage.json
+- HighHAProxyresponsetime: HighHAProxyresponsetime.json
+- LowRabbitMQfreediskspace: LowRabbitMQfreediskspace.json
+- HighRabbitMQsocketsusage: HighRabbitMQsocketsusage.json
+- Clustercontrollermismatch: Clustercontrollermismatch.json
+- HighGCtime: HighGCtime.json
+- HighRabbitMQmemoryusage: HighRabbitMQmemoryusage.json
+- Offlinepartitions: Offlinepartitions.json
+- HighHAProxyfrontendsessionusage: HighHAProxyfrontendsessionusage.json
+- WSO2APIManager-Highhttpsbackendlatency: WSO2APIManager-Highhttpsbackendlatency.json
+- CustomAlertLab: CustomAlertLab.json
+- HighRabbitMQnumberofunacknowledgedmessages: HighRabbitMQnumberofunacknowledgedmessages.json
+- WSO2APIManager-Highhttplatency: WSO2APIManager-Highhttplatency.json
+- HighHAProxyrequestsqueue: HighHAProxyrequestsqueue.json
+- WSO2APIManager-Carbonhasexteremlyhighsystemresponsetime: WSO2APIManager-Carbonhasexteremlyhighsystemresponsetime.json
+- Underreplicated: Underreplicated.json
+Clustercontrollermismatch:
+- name: Cluster controller mismatch
+CustomAlertLab:
+- name: Custom Alert Lab
+HighGCtime:
+- name: High GC time
+HighHAProxybackendsessionusage:
+- name: High HAProxy backend session usage
+HighHAProxyfrontendsessionusage:
+- name: High HAProxy frontend session usage
+HighHAProxyrequestsqueue:
+- name: High HAProxy requests queue
+HighHAProxyresponsetime:
+- name: High HAProxy response time
+HighOSCPUusage:
+- name: High OS CPU usage
+HighRabbitMQfiledescriptorsusage:
+- name: High RabbitMQ file descriptors usage
+HighRabbitMQmemoryusage:
+- name: High RabbitMQ memory usage
+HighRabbitMQnumberofautodeletequeueswithoutconsumers:
+- name: High RabbitMQ number of auto delete queues without consumers
+HighRabbitMQnumberofblockedconnections:
+- name: High RabbitMQ number of blocked connections
+HighRabbitMQnumberofunacknowledgedmessages:
+- name: High RabbitMQ number of unacknowledged messages
+HighRabbitMQprocessesusage:
+- name: High RabbitMQ processes usage
+HighRabbitMQsocketsusage:
+- name: High RabbitMQ sockets usage
+Highpaniccount:
+- name: High panic count
+LowHAProxyidletime:
+- name: Low HAProxy idle time
+LowRabbitMQfreediskspace:
+- name: Low RabbitMQ free disk space
+Offlinepartitions:
+- name: Offline partitions
+RabbitMQNodefailed:
+- name: RabbitMQ Node failed
+RedisReplicasynchronizationinprogress:
+- name: Redis Replica synchronization in progress
+RedisReplicaunsynchronized:
+- name: Redis Replica unsynchronized
+Underreplicated:
+- name: Under replicated
+WSO2APIManager-Carbonhasexteremlyhighsystemresponsetime:
+- name: WSO2 API Manager - Carbon has exteremly high system response time
+WSO2APIManager-Carbonhasfaultyservices:
+- name: WSO2 API Manager - Carbon has faulty services
+WSO2APIManager-Highhttpbackendlatency:
+- name: WSO2 API Manager - High http backend latency
+WSO2APIManager-Highhttplatency:
+- name: WSO2 API Manager - High http latency
+WSO2APIManager-Highhttpsbackendlatency:
+- name: WSO2 API Manager - High https backend latency
+WSO2APIManager-Highhttpslatency:
+- name: WSO2 API Manager - High https latency

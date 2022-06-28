@@ -1,0 +1,23 @@
+{
+ "active": true,
+ "activeGateGroup": null,
+ "authToken": null,
+ "certificateCheckEnabled": false,
+ "davisEventsIntegrationEnabled": false,
+ "endpointStatus": "UNKNOWN",
+ "endpointStatusInfo": "Status for this endpoint is unknown.",
+ "endpointUrl": null,
+ "eventAnalysisAndAlertingEnabled": false,
+ "eventsFieldSelectors": [],
+ "eventsIntegrationEnabled": false,
+ "hostnameVerificationEnabled": false,
+ "label": "kube",
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   1
+  ]
+ },
+ "prometheusExportersIntegrationEnabled": false,
+ "workloadIntegrationEnabled": true
+}

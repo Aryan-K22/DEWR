@@ -1,0 +1,10 @@
+config:
+- EasyTravelAlertstest: EasyTravelAlertstest.json
+- Default: Default.json
+- DefaultforActiveGateTokenExpiry: DefaultforActiveGateTokenExpiry.json
+Default:
+- name: Default
+DefaultforActiveGateTokenExpiry:
+- name: Default for ActiveGate Token Expiry
+EasyTravelAlertstest:
+- name: EasyTravel Alerts test

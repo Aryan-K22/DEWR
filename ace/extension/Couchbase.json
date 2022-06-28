@@ -1,0 +1,29 @@
+{
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "metricGroup": "tech.couchbase",
+ "name": "{{.name}}",
+ "properties": [
+  {
+   "defaultValue": "",
+   "key": "port",
+   "type": "STRING"
+  },
+  {
+   "defaultValue": "",
+   "key": "auth_user",
+   "type": "STRING"
+  },
+  {
+   "defaultValue": "",
+   "key": "auth_password",
+   "type": "PASSWORD"
+  }
+ ],
+ "type": "ONEAGENT",
+ "version": "2.23"
+}

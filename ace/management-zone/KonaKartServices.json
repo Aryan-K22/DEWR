@@ -1,0 +1,14 @@
+{
+ "description": null,
+ "dimensionalRules": [],
+ "entitySelectorBasedRules": [],
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [],
+  "currentConfigurationVersions": [
+   "1"
+  ]
+ },
+ "name": "{{.name}}",
+ "rules": []
+}

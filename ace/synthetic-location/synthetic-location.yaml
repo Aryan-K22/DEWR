@@ -1,0 +1,4 @@
+config:
+- Laptop: Laptop.json
+Laptop:
+- name: Laptop

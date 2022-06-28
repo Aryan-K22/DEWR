@@ -1,0 +1,14 @@
+{
+ "applicationIdentifier": "APPLICATION-FF9A27BE971A5B6D",
+ "filterConfig": {
+  "applicationMatchTarget": "URL",
+  "applicationMatchType": "CONTAINS",
+  "pattern": "8079"
+ },
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   0
+  ]
+ }
+}

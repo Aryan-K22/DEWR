@@ -1,0 +1,4 @@
+config:
+- DynatraceLab: DynatraceLab.json
+DynatraceLab:
+- name: Dynatrace Lab

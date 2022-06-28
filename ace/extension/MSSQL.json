@@ -1,0 +1,13 @@
+{
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "metricGroup": "tech.mssql",
+ "name": "{{.name}}",
+ "properties": [],
+ "type": "ONEAGENT",
+ "version": "2.016"
+}

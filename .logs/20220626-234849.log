@@ -1,0 +1,9 @@
+2022-06-26 23:48:49 DEBUG request log not activated
+2022-06-26 23:48:49 DEBUG response log not activated
+2022-06-26 23:48:49 INFO  Dynatrace Monitoring as Code v1.7.0
+2022-06-26 23:48:49 DEBUG Reading projects...
+2022-06-26 23:48:49 DEBUG Sorting projects...
+2022-06-26 23:48:49 INFO  Executing projects in this order: 
+2022-06-26 23:48:49 INFO  Processing environment ace...
+2022-06-26 23:48:49 INFO  Deployment summary:
+2022-06-26 23:48:49 INFO  Deployment finished without errors

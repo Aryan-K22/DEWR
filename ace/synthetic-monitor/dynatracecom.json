@@ -1,0 +1,67 @@
+{
+ "anomalyDetection": {
+  "loadingTimeThresholds": {
+   "enabled": true,
+   "thresholds": []
+  },
+  "outageHandling": {
+   "globalOutage": true,
+   "globalOutagePolicy": {
+    "consecutiveRuns": 1
+   },
+   "localOutage": false,
+   "localOutagePolicy": {
+    "affectedLocations": null,
+    "consecutiveRuns": null
+   },
+   "retryOnError": true
+  }
+ },
+ "automaticallyAssignedApps": [],
+ "createdFrom": "GUI",
+ "enabled": false,
+ "entityId": "SYNTHETIC_TEST-10020E1DD319456E",
+ "events": [
+  {
+   "entityId": "SYNTHETIC_TEST_STEP-F2A3D413120F59F7",
+   "name": "Loading of \"dynatrace.com\"",
+   "sequenceNumber": 1
+  }
+ ],
+ "frequencyMin": 5,
+ "keyPerformanceMetrics": {
+  "loadActionKpm": "VISUALLY_COMPLETE",
+  "xhrActionKpm": "VISUALLY_COMPLETE"
+ },
+ "locations": [
+  "GEOLOCATION-E01B833216FC3598"
+ ],
+ "managementZones": [],
+ "manuallyAssignedApps": [],
+ "name": "{{.name}}",
+ "script": {
+  "configuration": {
+   "chromiumStartupFlags": {
+    "disable-web-security": false
+   },
+   "device": {
+    "deviceName": "Desktop",
+    "orientation": "landscape"
+   }
+  },
+  "events": [
+   {
+    "description": "Loading of \"dynatrace.com\"",
+    "type": "navigate",
+    "url": "dynatrace.com",
+    "wait": {
+     "waitFor": "page_complete"
+    }
+   }
+  ],
+  "type": "availability",
+  "version": "1.0"
+ },
+ "tags": [],
+ "type": "BROWSER"
+}

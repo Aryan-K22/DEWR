@@ -1,0 +1,258 @@
+{
+ "dashboardMetadata": {
+  "dashboardFilter": null,
+  "name": "KonaKart Users",
+  "owner": "karwalaryan@gmail.com",
+  "shared": false,
+  "tilesNameSize": null
+ },
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   6
+  ]
+ },
+ "tiles": [
+  {
+   "assignedEntities": [
+    "APPLICATION-43CF50B99614FEA0",
+    "APPLICATION_METHOD-864CE401E816F9B6"
+   ],
+   "bounds": {
+    "height": 304,
+    "left": 304,
+    "top": 152,
+    "width": 304
+   },
+   "configured": true,
+   "name": "KonaKart",
+   "nameSize": null,
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "DEM_KEY_USER_ACTION"
+  },
+  {
+   "bounds": {
+    "height": 304,
+    "left": 0,
+    "top": 152,
+    "width": 304
+   },
+   "configured": true,
+   "customName": "Data explorer results",
+   "name": "Load Action Duration",
+   "nameSize": null,
+   "queries": [
+    {
+     "enabled": true,
+     "filterBy": {
+      "criteria": [],
+      "entityAttribute": null,
+      "filter": null,
+      "filterOperator": null,
+      "filterType": null,
+      "globalEntity": null,
+      "nestedFilters": [],
+      "relationship": null
+     },
+     "foldTransformation": null,
+     "generatedMetricSelector": "builtin:apps.web.actionDuration.load.browser:splitBy():avg:auto:sort(value(avg,descending)):limit(100)",
+     "id": "A",
+     "limit": 100,
+     "metric": "builtin:apps.web.actionDuration.load.browser",
+     "metricSelector": null,
+     "sortBy": "DESC",
+     "spaceAggregation": "AVG",
+     "splitBy": [],
+     "timeAggregation": "DEFAULT"
+    }
+   ],
+   "queriesSettings": {
+    "foldAggregation": null,
+    "foldTransformation": null,
+    "resolution": ""
+   },
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "DATA_EXPLORER",
+   "visualConfig": {
+    "axes": {
+     "xAxis": {
+      "displayName": "",
+      "visible": true
+     },
+     "yAxes": [
+      {
+       "defaultAxis": true,
+       "displayName": "",
+       "max": "AUTO",
+       "min": "AUTO",
+       "position": "LEFT",
+       "queryIds": [
+        "A"
+       ],
+       "visible": true
+      }
+     ]
+    },
+    "global": {
+     "hasTrendline": null,
+     "hideLegend": false,
+     "seriesType": null,
+     "theme": null,
+     "threshold": null
+    },
+    "graphChartSettings": {
+     "connectNulls": false
+    },
+    "heatmapSettings": {
+     "xAxisBuckets": null,
+     "yAxis": "VALUE",
+     "yAxisBuckets": null
+    },
+    "honeycombSettings": {
+     "showHive": true,
+     "showLabels": false,
+     "showLegend": true
+    },
+    "rules": [
+     {
+      "matcher": "A:",
+      "properties": {
+       "alias": null,
+       "color": "DEFAULT",
+       "seriesType": null
+      },
+      "seriesOverrides": [],
+      "unitTransform": null,
+      "valueFormat": null
+     }
+    ],
+    "singleValueSettings": null,
+    "tableSettings": {
+     "isThresholdBackgroundAppliedToCell": false
+    },
+    "thresholds": [
+     {
+      "axisTarget": "LEFT",
+      "columnId": null,
+      "queryId": "",
+      "rules": [
+       {
+        "color": "#7dc540",
+        "value": null
+       },
+       {
+        "color": "#f5d30f",
+        "value": null
+       },
+       {
+        "color": "#dc172a",
+        "value": null
+       }
+      ],
+      "visible": true
+     }
+    ],
+    "type": "GRAPH_CHART"
+   }
+  },
+  {
+   "assignedEntities": [
+    "APPLICATION-43CF50B99614FEA0"
+   ],
+   "bounds": {
+    "height": 304,
+    "left": 304,
+    "top": 456,
+    "width": 304
+   },
+   "configured": true,
+   "name": "User behavior",
+   "nameSize": null,
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "SESSION_METRICS"
+  },
+  {
+   "assignedEntities": [
+    "APPLICATION-43CF50B99614FEA0"
+   ],
+   "bounds": {
+    "height": 304,
+    "left": 0,
+    "top": 456,
+    "width": 304
+   },
+   "configured": true,
+   "name": "User breakdown",
+   "nameSize": null,
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "USERS"
+  },
+  {
+   "bounds": {
+    "height": 304,
+    "left": 608,
+    "top": 152,
+    "width": 304
+   },
+   "configured": true,
+   "name": "Live user activity",
+   "nameSize": null,
+   "tileFilter": {
+    "managementZone": {
+     "id": "-5482936610374150475",
+     "name": "KonaKart App"
+    },
+    "timeframe": null
+   },
+   "tileType": "UEM_ACTIVE_SESSIONS"
+  },
+  {
+   "bounds": {
+    "height": 152,
+    "left": 0,
+    "top": 0,
+    "width": 912
+   },
+   "configured": true,
+   "markdown": "## KonaKart User Performance Tracking\n\nThis dashboard gives insight inot the **behavior** of users and the breakdown of their activity. You can use key user actions to further customize your tracking. For further details on RUM in Dynatrace, you can just navigate to [Dynatrace Documentation](https://www.dynatrace.com/support/help/how-to-use-dynatrace/real-user-monitoring).",
+   "name": "Markdown",
+   "nameSize": null,
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "MARKDOWN"
+  },
+  {
+   "assignedEntities": [
+    "APPLICATION-43CF50B99614FEA0"
+   ],
+   "bounds": {
+    "height": 304,
+    "left": 608,
+    "top": 456,
+    "width": 304
+   },
+   "configured": true,
+   "name": "Key user action overview",
+   "nameSize": null,
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "UEM_KEY_USER_ACTIONS"
+  }
+ ]
+}

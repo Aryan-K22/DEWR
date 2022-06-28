@@ -1,0 +1,28 @@
+{
+ "displayName": "{{.name}}",
+ "enabled": false,
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "nameFormat": "Collin's {Service:DetectedName}",
+ "rules": [
+  {
+   "comparisonInfo": {
+    "caseSensitive": true,
+    "negate": false,
+    "operator": "CONTAINS",
+    "type": "STRING",
+    "value": "easytravel.business.backend"
+   },
+   "key": {
+    "attribute": "PROCESS_GROUP_PREDEFINED_METADATA",
+    "dynamicKey": "JAVA_JAR_FILE",
+    "type": "PROCESS_PREDEFINED_METADATA_KEY"
+   }
+  }
+ ],
+ "type": "SERVICE"
+}

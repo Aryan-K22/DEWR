@@ -1,0 +1,13 @@
+config:
+- easyTravel: easyTravel.json
+- KonaKartHealth: KonaKartHealth.json
+- PDP354test: PDP354test.json
+- KonaKartUsers: KonaKartUsers.json
+KonaKartHealth:
+- name: KonaKart Health
+KonaKartUsers:
+- name: KonaKart Users
+PDP354test:
+- name: PDP354 test
+easyTravel:
+- name: easyTravel

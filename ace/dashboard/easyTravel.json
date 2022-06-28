@@ -1,0 +1,431 @@
+{
+ "dashboardMetadata": {
+  "dashboardFilter": null,
+  "name": "easyTravel",
+  "owner": "karwalaryan@gmail.com",
+  "shared": false,
+  "tilesNameSize": null
+ },
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   6
+  ]
+ },
+ "tiles": [
+  {
+   "assignedEntities": [
+    "SERVICE-442D6459DB34E294"
+   ],
+   "bounds": {
+    "height": 304,
+    "left": 38,
+    "top": 38,
+    "width": 304
+   },
+   "configured": true,
+   "name": "Service or request",
+   "nameSize": null,
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "SERVICE_VERSATILE"
+  },
+  {
+   "bounds": {
+    "height": 304,
+    "left": 38,
+    "top": 342,
+    "width": 304
+   },
+   "chartVisible": true,
+   "configured": true,
+   "filterConfig": null,
+   "name": "Service health",
+   "nameSize": null,
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "SERVICES"
+  },
+  {
+   "bounds": {
+    "height": 304,
+    "left": 646,
+    "top": 38,
+    "width": 304
+   },
+   "configured": true,
+   "customName": "Data explorer results",
+   "name": "Simple Service Filter",
+   "nameSize": null,
+   "queries": [
+    {
+     "enabled": true,
+     "filterBy": {
+      "criteria": [],
+      "entityAttribute": null,
+      "filter": null,
+      "filterOperator": "AND",
+      "filterType": null,
+      "globalEntity": null,
+      "nestedFilters": [
+       {
+        "criteria": [
+         {
+          "evaluator": "IN",
+          "matchExactly": true,
+          "value": "JourneyService"
+         }
+        ],
+        "entityAttribute": "entityName",
+        "filter": "dt.entity.service",
+        "filterOperator": "OR",
+        "filterType": "NAME",
+        "globalEntity": null,
+        "nestedFilters": [],
+        "relationship": null
+       }
+      ],
+      "relationship": null
+     },
+     "foldTransformation": null,
+     "generatedMetricSelector": "builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),entityName.equals(~\"JourneyService~\")\")))):splitBy():sum:auto:sort(value(sum,descending)):limit(100)",
+     "id": "A",
+     "limit": 100,
+     "metric": "builtin:service.requestCount.total",
+     "metricSelector": null,
+     "sortBy": "DESC",
+     "spaceAggregation": "SUM",
+     "splitBy": [],
+     "timeAggregation": "DEFAULT"
+    }
+   ],
+   "queriesSettings": {
+    "foldAggregation": null,
+    "foldTransformation": null,
+    "resolution": ""
+   },
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "DATA_EXPLORER",
+   "visualConfig": {
+    "axes": {
+     "xAxis": {
+      "displayName": "",
+      "visible": true
+     },
+     "yAxes": [
+      {
+       "defaultAxis": true,
+       "displayName": "",
+       "max": "AUTO",
+       "min": "AUTO",
+       "position": "LEFT",
+       "queryIds": [
+        "A"
+       ],
+       "visible": true
+      }
+     ]
+    },
+    "global": {
+     "hasTrendline": null,
+     "hideLegend": false,
+     "seriesType": null,
+     "theme": null,
+     "threshold": null
+    },
+    "graphChartSettings": {
+     "connectNulls": false
+    },
+    "heatmapSettings": {
+     "xAxisBuckets": null,
+     "yAxis": "VALUE",
+     "yAxisBuckets": null
+    },
+    "honeycombSettings": {
+     "showHive": true,
+     "showLabels": false,
+     "showLegend": true
+    },
+    "rules": [
+     {
+      "matcher": "A:",
+      "properties": {
+       "alias": null,
+       "color": "DEFAULT",
+       "seriesType": null
+      },
+      "seriesOverrides": [],
+      "unitTransform": null,
+      "valueFormat": null
+     }
+    ],
+    "singleValueSettings": null,
+    "tableSettings": {
+     "isThresholdBackgroundAppliedToCell": false
+    },
+    "thresholds": [
+     {
+      "axisTarget": "LEFT",
+      "columnId": null,
+      "queryId": "",
+      "rules": [
+       {
+        "color": "#7dc540",
+        "value": null
+       },
+       {
+        "color": "#f5d30f",
+        "value": null
+       },
+       {
+        "color": "#dc172a",
+        "value": null
+       }
+      ],
+      "visible": true
+     }
+    ],
+    "type": "GRAPH_CHART"
+   }
+  },
+  {
+   "assignedEntities": [
+    "SERVICE_METHOD-1D7FD9A6A5AA0161",
+    "SERVICE-442D6459DB34E294"
+   ],
+   "bounds": {
+    "height": 152,
+    "left": 342,
+    "top": 38,
+    "width": 304
+   },
+   "configured": true,
+   "name": "Service or request",
+   "nameSize": null,
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "SERVICE_VERSATILE"
+  },
+  {
+   "assignedEntities": [
+    "SERVICE-AD8E5D776A80B0E9"
+   ],
+   "bounds": {
+    "height": 152,
+    "left": 342,
+    "top": 342,
+    "width": 304
+   },
+   "configured": true,
+   "name": "Database performance",
+   "nameSize": null,
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "DATABASE"
+  },
+  {
+   "bounds": {
+    "height": 304,
+    "left": 646,
+    "top": 342,
+    "width": 304
+   },
+   "configured": true,
+   "customName": "Data explorer results",
+   "name": "Naming Rule with Attributes",
+   "nameSize": null,
+   "queries": [
+    {
+     "enabled": true,
+     "filterBy": {
+      "criteria": [],
+      "entityAttribute": null,
+      "filter": null,
+      "filterOperator": "AND",
+      "filterType": null,
+      "globalEntity": null,
+      "nestedFilters": [
+       {
+        "criteria": [
+         {
+          "evaluator": "IN",
+          "matchExactly": true,
+          "value": "/orange-booking-payment.jsf"
+         },
+         {
+          "evaluator": "IN",
+          "matchExactly": true,
+          "value": "/orange-booking-review.jsf"
+         },
+         {
+          "evaluator": "IN",
+          "matchExactly": true,
+          "value": "/orange-booking-finish.jsf"
+         }
+        ],
+        "entityAttribute": "entityName",
+        "filter": "dt.entity.service_method",
+        "filterOperator": "OR",
+        "filterType": "NAME",
+        "globalEntity": null,
+        "nestedFilters": [],
+        "relationship": null
+       }
+      ],
+      "relationship": null
+     },
+     "foldTransformation": null,
+     "generatedMetricSelector": "builtin:service.keyRequest.response.time:filter(and(or(in(\"dt.entity.service_method\",entitySelector(\"type(service_method),entityName.equals(~\"/orange-booking-review.jsf~\")\")),in(\"dt.entity.service_method\",entitySelector(\"type(service_method),entityName.equals(~\"/orange-booking-finish.jsf~\")\")),in(\"dt.entity.service_method\",entitySelector(\"type(service_method),entityName.equals(~\"/orange-booking-payment.jsf~\")\"))))):splitBy(\"dt.entity.service_method\"):median:auto:sort(value(median,descending)):limit(10)",
+     "id": "A",
+     "limit": null,
+     "metric": "builtin:service.keyRequest.response.time",
+     "metricSelector": null,
+     "sortBy": null,
+     "spaceAggregation": "MEDIAN",
+     "splitBy": [
+      "dt.entity.service_method"
+     ],
+     "timeAggregation": "DEFAULT"
+    }
+   ],
+   "queriesSettings": {
+    "foldAggregation": null,
+    "foldTransformation": null,
+    "resolution": ""
+   },
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "DATA_EXPLORER",
+   "visualConfig": {
+    "axes": {
+     "xAxis": {
+      "displayName": "",
+      "visible": true
+     },
+     "yAxes": [
+      {
+       "defaultAxis": true,
+       "displayName": "",
+       "max": "AUTO",
+       "min": "AUTO",
+       "position": "LEFT",
+       "queryIds": [
+        "A"
+       ],
+       "visible": true
+      }
+     ]
+    },
+    "global": {
+     "hasTrendline": null,
+     "hideLegend": false,
+     "seriesType": null,
+     "theme": null,
+     "threshold": null
+    },
+    "graphChartSettings": {
+     "connectNulls": false
+    },
+    "heatmapSettings": {
+     "xAxisBuckets": null,
+     "yAxis": "VALUE",
+     "yAxisBuckets": null
+    },
+    "honeycombSettings": {
+     "showHive": true,
+     "showLabels": false,
+     "showLegend": true
+    },
+    "rules": [
+     {
+      "matcher": "A:",
+      "properties": {
+       "alias": null,
+       "color": "DEFAULT",
+       "seriesType": null
+      },
+      "seriesOverrides": [],
+      "unitTransform": null,
+      "valueFormat": null
+     }
+    ],
+    "singleValueSettings": null,
+    "tableSettings": {
+     "isThresholdBackgroundAppliedToCell": null
+    },
+    "thresholds": [
+     {
+      "axisTarget": "LEFT",
+      "columnId": null,
+      "queryId": "",
+      "rules": [
+       {
+        "color": "#7dc540",
+        "value": null
+       },
+       {
+        "color": "#f5d30f",
+        "value": null
+       },
+       {
+        "color": "#dc172a",
+        "value": null
+       }
+      ],
+      "visible": true
+     }
+    ],
+    "type": "GRAPH_CHART"
+   }
+  },
+  {
+   "assignedEntities": [
+    "SERVICE_METHOD-8EBCE8C178246B28",
+    "SERVICE-442D6459DB34E294"
+   ],
+   "bounds": {
+    "height": 152,
+    "left": 342,
+    "top": 190,
+    "width": 304
+   },
+   "configured": true,
+   "name": "Service or request",
+   "nameSize": null,
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "SERVICE_VERSATILE"
+  },
+  {
+   "bounds": {
+    "height": 304,
+    "left": 950,
+    "top": 38,
+    "width": 304
+   },
+   "configured": true,
+   "name": "Graph",
+   "nameSize": null,
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "DATA_EXPLORER"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+config:
+- easyTravel: easyTravel.json
+- HelloWorld: HelloWorld.json
+- KonaKart: KonaKart.json
+- wwweasytravelcom: wwweasytravelcom.json
+- JSAPI: JSAPI.json
+- Unicorn: Unicorn.json
+HelloWorld:
+- name: HelloWorld
+JSAPI:
+- name: JS API
+KonaKart:
+- name: KonaKart
+Unicorn:
+- name: Unicorn
+easyTravel:
+- name: easyTravel
+wwweasytravelcom:
+- name: www.easytravel.com

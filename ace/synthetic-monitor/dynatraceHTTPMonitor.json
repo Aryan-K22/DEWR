@@ -1,0 +1,62 @@
+{
+ "anomalyDetection": {
+  "loadingTimeThresholds": {
+   "enabled": true,
+   "thresholds": []
+  },
+  "outageHandling": {
+   "globalOutage": true,
+   "globalOutagePolicy": {
+    "consecutiveRuns": 1
+   },
+   "localOutage": false,
+   "localOutagePolicy": {
+    "affectedLocations": null,
+    "consecutiveRuns": null
+   }
+  }
+ },
+ "automaticallyAssignedApps": [],
+ "createdFrom": "GUI",
+ "enabled": false,
+ "entityId": "HTTP_CHECK-CC92AD30395D85B8",
+ "frequencyMin": 5,
+ "locations": [
+  "GEOLOCATION-E01B833216FC3598"
+ ],
+ "managementZones": [],
+ "manuallyAssignedApps": [],
+ "name": "{{.name}}",
+ "requests": [
+  {
+   "entityId": "HTTP_CHECK_STEP-6E955745BAFDF13B",
+   "name": "dynatrace.com",
+   "sequenceNumber": 1
+  }
+ ],
+ "script": {
+  "requests": [
+   {
+    "configuration": {
+     "acceptAnyCertificate": true,
+     "followRedirects": true
+    },
+    "description": "dynatrace.com",
+    "method": "GET",
+    "url": "http://dynatrace.com",
+    "validation": {
+     "rules": [
+      {
+       "passIfFound": false,
+       "type": "httpStatusesList",
+       "value": "\u003e=400"
+      }
+     ]
+    }
+   }
+  ],
+  "version": "1.0"
+ },
+ "tags": [],
+ "type": "HTTP"
+}

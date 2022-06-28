@@ -1,0 +1,33 @@
+{
+ "aggregationType": "AVG",
+ "alertCondition": "ABOVE",
+ "dealertingSamples": 5,
+ "description": "The RabbitMQ processes usage of {severity} is {alert_condition} the threshold of {threshold}",
+ "disabledReason": "NONE",
+ "enabled": true,
+ "eventType": "PERFORMANCE",
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   6
+  ]
+ },
+ "metricId": "builtin:tech.rabbitmq.proc_usage",
+ "monitoringStrategy": {
+  "alertCondition": "ABOVE",
+  "alertingOnMissingData": false,
+  "dealertingSamples": 5,
+  "samples": 5,
+  "threshold": 90,
+  "type": "STATIC_THRESHOLD",
+  "unit": "PERCENT",
+  "violatingSamples": 3
+ },
+ "name": "{{.name}}",
+ "samples": 5,
+ "severity": "PERFORMANCE",
+ "threshold": 90,
+ "unit": "PERCENT",
+ "violatingSamples": 3,
+ "warningReason": "NONE"
+}

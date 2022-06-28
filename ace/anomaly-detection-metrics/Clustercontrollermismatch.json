@@ -1,0 +1,33 @@
+{
+ "aggregationType": "AVG",
+ "alertCondition": "ABOVE",
+ "dealertingSamples": 5,
+ "description": "There are {severity} active cluster controllers",
+ "disabledReason": "NONE",
+ "enabled": false,
+ "eventType": "ERROR",
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   6
+  ]
+ },
+ "metricId": "builtin:tech.kafka.pg.kafka.controller.KafkaController.ActiveControllerCount.Value",
+ "monitoringStrategy": {
+  "alertCondition": "ABOVE",
+  "alertingOnMissingData": false,
+  "dealertingSamples": 5,
+  "samples": 5,
+  "threshold": 1,
+  "type": "STATIC_THRESHOLD",
+  "unit": "COUNT",
+  "violatingSamples": 5
+ },
+ "name": "{{.name}}",
+ "samples": 5,
+ "severity": "ERROR",
+ "threshold": 1,
+ "unit": "COUNT",
+ "violatingSamples": 5,
+ "warningReason": "NONE"
+}

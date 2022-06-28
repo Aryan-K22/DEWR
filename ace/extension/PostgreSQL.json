@@ -1,0 +1,34 @@
+{
+ "metadata": {
+  "clusterVersion": "1.245.50.20220627-170543",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "metricGroup": "tech.postgresql",
+ "name": "{{.name}}",
+ "properties": [
+  {
+   "defaultValue": "",
+   "key": "database",
+   "type": "STRING"
+  },
+  {
+   "defaultValue": "",
+   "key": "auth_user",
+   "type": "STRING"
+  },
+  {
+   "defaultValue": "",
+   "key": "auth_password",
+   "type": "PASSWORD"
+  },
+  {
+   "defaultValue": "5432",
+   "key": "port",
+   "type": "STRING"
+  }
+ ],
+ "type": "ONEAGENT",
+ "version": "2.010"
+}
